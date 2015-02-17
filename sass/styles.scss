@@ -4,3 +4,106 @@
 @import "variables";
 @import "mixins";
 @import "base";
+
+body 
+{
+	background-color: #EBE8E4;
+	color: #222;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.jumbotron
+{
+	background-image: url("./chengdu copy.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 20px; 
+	margin: 20px;
+}
+
+.jumbotron h1
+{
+	font-size: 50px;
+	color: rgb(0,0,0);
+	font-family: 'Shift', sans-serif;
+	margin: 20px;
+}
+
+.jumbotron p
+{
+	font-size: 20px;
+	color: rgb(200,200,200);
+	margin: 20px;
+}
+
+.nav 
+{
+	width: 100%; 
+	background-color: white;
+	padding: 5px;
+}
+
+.nav ul li 
+{
+	display: inline;
+	margin-right: 3px;
+}
+
+.nav ul li a 
+{
+    color: #5a5a5a;
+  	font-size: 20px;
+  	font-weight: bold;
+  	padding-left: 15px;
+  	padding-right: 15px;
+  	text-transform: uppercase
+}
+
+.nav ul li a:hover 
+{
+    color: white;
+    background-color: black;
+}
+
+.stickyNav
+{
+	position: fixed;
+	width: 100%;
+	padding: 5px;
+	top: 0;
+    z-index: 100;  
+    border-top: 0; 
+    background-color: white;
+}
+
+.content
+{
+	margin: 20px;
+	padding: 20px;
+}
+
+.content h3
+{
+	font-size: 25px;
+	margin-left: 20px;
+}
+
+.footer
+{
+	margin: 20px;
+	padding: 20px;
+}
+
+.container
+{
+	margin: 20px;
+	padding: 20px;
+}
+
+.city
+{
+	margin: 20px;
+	padding-top: 50px;
+}
