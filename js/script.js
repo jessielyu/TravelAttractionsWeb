@@ -18,6 +18,30 @@ stickyNavbar();
   
 $(window).scroll(function() {  
     stickyNavbar();  
+    var top = $(window).scrollTop();
+    if (top > 10) {
+    	//small
+    	$(".nav").addClass("smallerNav");
+    	$(".nav ul li a").addClass("smallerNav ul li a");
+    } else {
+    	//big
+    	$(".nav").removeClass("smallerNav");
+    	$(".nav ul li a").removeClass("smallerNav ul li a");
+    }
+
+    console.log($(".nav ul li a#TW"));
+    if (top>200 && top<700) {
+    	$(".nav ul li a").removeClass("highlight");
+    	$(".nav ul li a#TW").addClass("highlight");
+    }
+    else if (top>700 && top<900) {
+    	$(".nav ul li a").removeClass("highlight");
+    	$(".nav ul li a#TW").addClass("highlight");
+    }
+    else 
+    {
+    	$(".nav ul li a").removeClass("highlight");
+    }
 });  
 });  
 
@@ -29,7 +53,7 @@ $(document).ready(function(){
       $target = $target.length && $target
       || $('[name=' + this.hash.slice(1) +']');
       if ($target.length) {
-        var targetOffset = $target.offset().top;
+        var targetOffset = $target.offset().top-30;
         $('html,body')
         .animate({scrollTop: targetOffset}, 1000);
        return false;
@@ -39,7 +63,7 @@ $(document).ready(function(){
 });
 
 
-jQuery(document).ready(function ($) {
+$(document).ready(function ($) {
 
   $('#checkbox').change(function(){
     setInterval(function () {
@@ -84,4 +108,5 @@ jQuery(document).ready(function ($) {
         moveRight();
     });
 
+    var a = $('a.control_next');
 });

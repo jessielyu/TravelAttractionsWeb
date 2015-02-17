@@ -42,7 +42,7 @@ body
 {
 	width: 100%; 
 	background-color: white;
-	padding: 5px;
+	padding: 10px;
 }
 
 .nav ul li 
@@ -51,6 +51,7 @@ body
 	margin-right: 3px;
 }
 
+
 .nav ul li a 
 {
     color: #5a5a5a;
@@ -58,13 +59,36 @@ body
   	font-weight: bold;
   	padding-left: 15px;
   	padding-right: 15px;
-  	text-transform: uppercase
+  	text-transform: uppercase;
 }
+
+.smallerNav
+{
+	width: 100%; 
+	background-color: white;
+}
+
+.smallerNav ul li a
+{
+	color: #5a5a5a;
+  	font-size: 12px;
+  	font-weight: bold;
+  	padding-left: 15px;
+  	padding-right: 15px;
+  	text-transform: uppercase;
+}
+
 
 .nav ul li a:hover 
 {
     color: white;
     background-color: black;
+}
+
+
+.highlight
+{
+	background-color: #66CCFF;
 }
 
 .stickyNav
@@ -105,7 +129,7 @@ body
 .city
 {
 	margin: 20px;
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
 #slider {
@@ -129,8 +153,8 @@ body
   float: left;
   margin: 0;
   padding: 0;
-  width: 500px;
-  height: 300px;
+  width: 840px;
+  height: 420px;
   background: #ccc;
   text-align: center;
   line-height: 300px;
