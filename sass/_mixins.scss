@@ -7,14 +7,52 @@
 
 .verticalCenter 
 {
-  position: relative;
-  margin: 20px;
-  background: white;
+	margin:20px;
+    position: relative;  
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
 }
 
-.verticalCenter img 
+.embedVideo
+{
+	margin: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.flow
 {
 	position: absolute;
-	top: 50%; 
-	transform: translate(0, -50%)
+	top: 2000px;
+	left: 250px;
+	color: white;
+	font-weight: bold;
+	font-size: 80px;
+	bottom: 0;
+}
+
+//modal
+#mask {
+  position:absolute;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+  
+#boxes .window {
+  position:fixed;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+  width:375px; 
+  height:203px;
 }
