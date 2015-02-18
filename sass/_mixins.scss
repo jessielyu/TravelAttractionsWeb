@@ -1,0 +1,20 @@
+.multicol
+{
+	-webkit-column-count: 3;
+  	-moz-column-count: 2;
+  	column-count: 2;
+}
+
+.verticalCenter 
+{
+  position: relative;
+  margin: 20px;
+  background: white;
+}
+
+.verticalCenter img 
+{
+	position: absolute;
+	top: 50%; 
+	transform: translate(0, -50%)
+}

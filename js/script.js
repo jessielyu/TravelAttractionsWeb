@@ -45,6 +45,7 @@ $(window).scroll(function() {
 });  
 });  
 
+
 $(document).ready(function(){
   $('a[href*=#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
