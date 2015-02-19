@@ -1,13 +1,13 @@
 .multicol
 {
-	-webkit-column-count: 3;
+	  -webkit-column-count: 3;
   	-moz-column-count: 2;
   	column-count: 2;
 }
 
 .verticalCenter 
 {
-	margin:20px;
+	  margin:20px;
     position: relative;  
     padding-top: 100px;
     padding-bottom: 100px;
@@ -19,6 +19,7 @@
 .embedVideo
 {
 	margin: 30px;
+  padding-bottom: 20px;
 	position: relative;
 	overflow: hidden;
 }
@@ -26,12 +27,13 @@
 .flow
 {
 	position: absolute;
-	top: 2000px;
-	left: 250px;
+	top: 2070px;
+	left: 240px;
 	color: white;
 	font-weight: bold;
-	font-size: 80px;
+	font-size: 50px;
 	bottom: 0;
+  font-family: Arial;
 }
 
 .fade {
@@ -41,9 +43,10 @@
    -webkit-transition: opacity .25s ease-in-out;
    }
 
-.fade:hover {
-      opacity: 0.5;
-      }
+.fade:hover 
+{
+    opacity: 0.5;
+}
 
 
 
