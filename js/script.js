@@ -138,10 +138,11 @@ function resize() {
 function modal() {
         document.getElementById("window").style.display = "block";
         console.log("Jessiehaha");
+        break;
 }
 
-function close() {
+function closeModal() {
         document.getElementById("window").style.display = "none";
-        console.log("Jessie");
-
+        console.log("haha");
+        break;
 }
