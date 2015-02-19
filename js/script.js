@@ -123,13 +123,14 @@ $(document).ready(function ($) {
     var a = $('a.control_next');
 });
 
-
-(function() {  
-    var dialog = document.getElementById('window');  
-    document.getElementById('show').onclick = function() {  
-        dialog.show();  
-    };  
-    document.getElementById('exit').onclick = function() {  
-        dialog.close();  
-    };  
-})();  
+var flag = true;
+function resize() {
+    if(flag) {
+        document.getElementById("cuteicon").style.width = "10%";
+        document.getElementById("cuteicon").style.height = "10%";
+    } else {
+        document.getElementById("cuteicon").style.width = "20%";
+        document.getElementById("cuteicon").style.height = "20%";
+    }
+    (flag)?flag=false:flag=true;
+} 
